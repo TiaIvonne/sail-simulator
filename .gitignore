@@ -26,6 +26,7 @@ venv.bak/
 Thumbs.db
 
 # Terraform
+terraform/
 terraform.tfvars
 *.tfstate
 *.tfstate.*
