@@ -1,7 +1,7 @@
-# ⛵ Boat Racing: A Data Engineering project  Lambda Architecture
+# ⛵ Boat Racing: A Data Engineering project with Lambda Architecture
 Disclaimer: This document has been written by a person (me) not a machine.
 
-** An implementation of  Lambda Architecture for Real-time Boat Racing Analytics and batch processing using parquet files and Azure **
+**An implementation of Lambda Architecture for Real-time Boat Racing Analytics and batch processing using parquet files and Azure**
 
 ---
 
@@ -10,7 +10,8 @@ Technical requirements/tools:
 - Python
 - Sql (SQL Server)
 - Bash for scripting
-- Azure ecosystem
+- Azure (Event hub - Stream Analytics - SQL Database - Storage)
+- Grafana for visualization/dashboard
 
 ## 🏗️ **Architecture**
 
