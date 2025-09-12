@@ -16,8 +16,8 @@ There are two main sections: real-time data and historical data with insights an
 2. [Data Overview](#Data-Overview)
 3. [Architecture](#Architecture)
 4. [Technical requirements](#Technical-requirements-tools)
-5. [Scripts](#Scripts)
-6 [Final thoughts and next steps](#Final-thoughts-and-next-steps)
+5. [Scripts](#Scripts)  
+6. [Final thoughts and next steps](#Final-thoughts-and-next-steps)
 
 # **Project Overview**
 
