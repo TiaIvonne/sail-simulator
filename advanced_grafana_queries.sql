@@ -1,13 +1,5 @@
 -- 🚀 ADVANCED GRAFANA QUERIES FOR PARQUET-BASED ANALYTICS
 -- Use these after running parquet_to_sql.py to sync data
--- 
--- ✅ ENHANCED VERSION - Updated with:
---    • Better boat naming (CONCAT('Boat ', boat_id))
---    • Improved formatting (ROUND functions)
---    • Color-friendly series names
---    • Enhanced readability
--- Updated with enhanced historical analysis capabilities
-
 
 -- 🎯 Daily Race Winners (Table Panel 1)
 -- Shows the winning boat each day with enhanced formatting

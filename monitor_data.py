@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Monitor incoming boat telemetry data
-Run this to see if data is flowing from Stream Analytics to SQL Database
+Check if data is flowing from Stream Analytics to SQL Database
+Usage: source database.env && python3 monitor_data.py
 """
 
 import pyodbc

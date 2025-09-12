@@ -2,6 +2,7 @@
 """
 Load Parquet files from Azure and insert into SQL for Grafana visualization
 Creates historical analytics tables for advanced dashboards
+Usage: source database.env && source azure_storage.env && python3 parquet_to_sql.py
 """
 
 import pandas as pd
@@ -139,11 +140,8 @@ def main():
         # Step 2: Sync Parquet files to SQL
         sync_all_parquet_files()
         
-        print("\n🎯 Now you can create Grafana panels with:")
-        print("   📈 Historical speed trends over time")
-        print("   🏆 Ranking changes by date")
-        print("   📊 Performance comparisons")
-        print("   🗺️  Position heat maps")
+        print("\n🎯 Now you can create Grafana panels!")
+
         
     except Exception as e:
         print(f"❌ Error: {e}")

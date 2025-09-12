@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Simple Parquet + Azure Blob Batch Processor
-Lambda Architecture study case with industry standards
+Lambda Architecture study case 
+Usage source database.env && source azure_storage.env && python3 simple_parquet_batch.py
 """
 
 import pandas as pd

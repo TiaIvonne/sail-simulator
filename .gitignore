@@ -2,6 +2,7 @@
 database.env
 azure_storage.env
 *.env
+*.template
 
 # Python
 __pycache__/

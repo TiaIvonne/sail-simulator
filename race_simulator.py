@@ -1,29 +1,15 @@
 # --------------------------------------------------------------------------------------------
-# Techionista Global Sailing Race simulator
+# Global Sailing Race simulator.
 #
 # This python app simulates the live positions of a fleet of sailing boats racing around
-# the globe. The app sends (simulated) boat telemetry to a specified EventHub every 60 seconds.
-#
-# You must build a working Lambda Architecture in Azure (including an EventHub) and make sure
-# the boat telemetry flows through your cloud architecture correctly and appears in PowerBI.
+# the globe. The app sends (simulated) boat telemetry to a specified EventHub.
 # 
-# WHAT YOU NEED TO DO:
-# - Fill in the EventHub Namespace connect string and the EventHub name below
-# - Run this program on your computer and keep it running
-# - Make sure the boat data arrives at your EventHub and flows through the Lambda Architecture
-#   into PowerBI
-#
-# NOTES:
-# This app will send the telemetry for every boat in the race. You must ensure that this 
-# information appears in PowerBI. At the very least, your dashboard should show the live
-# position of each boat on a world map, and a top ranking of all boats in the race.
-# For this you will need to build a complete Lambda Architecture with a hot and a cold data
-# path. Use the hot path for the live boat positions and the cold path to calculate the 
-# ranking. 
-#
 # Every few minutes one of the boats will send corrupted data to Azure. You will need to build
-# a filter in the cloud to automatically filter out corrupted data so that the PowerBI 
-# report always shows clean data.
+# a filter in the cloud to automatically filter out corrupted data so that the visualization 
+# tool always shows clean data.
+
+# Usage source azure_storage.env && python3 race_simulator.py
+# 
 # --------------------------------------------------------------------------------------------
 
 
@@ -126,7 +112,6 @@ def update_boat(boat):
     if (boat.Speed < 0):
         boat.Speed = 0
     if (boat.Speed > 25):  # Increased max speed for faster movement
-        
         boat.Speed = 25
 
     # force boat to move south-west from Cascais
