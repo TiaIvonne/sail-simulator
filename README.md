@@ -4,6 +4,12 @@ Author: Ivonne Mendoza, Data Devotee.
 
 Welcome to my new personal project for learning more about Data Engineering tools and techniques. Below, you can find snippets and explanations on this new journey.
 
+# **Snapshot from grafana**
+
+You can see a snapshot from Grafana’s dashboard on this link.
+https://cosmolabs.grafana.net/dashboard/snapshot/pgkUxOtA2bfSPZVNmP2WSXFMCj0Os3xH  
+There are two main sections: real-time data and historical data with insights and a rankings table.
+
 # **Table of Contents**
 
 1. [Project Overview](#Project-Overview)
@@ -11,8 +17,7 @@ Welcome to my new personal project for learning more about Data Engineering tool
 3. [Architecture](#Architecture)
 4. [Technical requirements](#Technical-requirements-tools)
 5. [Scripts](#Scripts)
-6. [Snapshot from grafana](#Snapshot-from-grafana)
-7. [Final thoughts and next steps](#Final-thoughts-and-next-steps)
+6 [Final thoughts and next steps](#Final-thoughts-and-next-steps)
 
 # **Project Overview**
 
@@ -50,15 +55,13 @@ monitor\_data.py: Check if data is going through from Stream Analytics to SQL Da
 simple\_parquet\_batch: Extract data from SQL Database, analyze it, and send historical data as a parquet file (Azure Blob Storage)  
 parquet\_to\_sql: Captures parquet files from Blob Storage and sends them to SQL Database
 
-# **Snapshot from grafana**
 
-You can see a snapshot from Grafana’s dashboard on this link.
-https://cosmolabs.grafana.net/dashboard/snapshot/pgkUxOtA2bfSPZVNmP2WSXFMCj0Os3xH
-There are two main sections: real-time data and historical data with insights and a rankings table.
 
    
 # **Final thoughts and next steps**  
-I remember the first time I touched this code. It was for a traineeship, and at that time, it was more about completing it on a tight schedule than learning and, even more, understanding what I was doing and why.   
-Things have changed since then, and now, just for fun, I recreate this project from my perspective. I modified the original simulator for fast-moving boats, changed the visualization tool, and created more scripts to run this project from my terminal, leaving the necessity to use a GUI interface for managing cloud services. And then, I changed the visualization tool. Power BI is great, but there are some limitations to this tool, and I always want to explore other approaches. That is why I chose Grafana for this. It is versatile, offers good support for connecting different data sources, and is open source. Perfect for case studies like this.  
+I remember the first time I touched this code. It was for a traineeship, and at that time, it was more about completing it on a tight schedule than learning and, even more, understanding what I was doing and why.  
+Things have changed since then, and now, just for fun, I recreate this project from my perspective. I modified the original simulator for fast-moving boats, changed the visualization tool, and created more scripts to run this project from my terminal, leaving the necessity to use a GUI interface for managing cloud services.  
+And then, I changed the visualization tool. Power BI is great, but there are some limitations to this tool, and I always want to explore other approaches.  
+That is why I chose Grafana for this. It is versatile, offers good support for connecting different data sources, and is open source. Perfect for case studies like this.  
 For next steps, I would like to explore Terraform for more abstractions in cloud infrastructure, and of course, try Kafka.
 
