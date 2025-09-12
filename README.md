@@ -5,7 +5,7 @@ Author: Ivonne Mendoza, Data Devotee.
 Welcome to my new personal project for learning more about Data Engineering tools and techniques. Below, you can find snippets and explanations on this new journey.
 
 # **Table of Contents**
-# Table of Contents
+
 1. [Project Overview](#Project-Overview)
 2. [Data Overview](#Data-Overview)
 3. [Architecture](#Architecture)
