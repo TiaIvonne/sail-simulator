@@ -36,3 +36,6 @@ terraform.tfvars
 
 # Logs
 *.log
+
+# Images
+images/

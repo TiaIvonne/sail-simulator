@@ -1,4 +1,4 @@
-# **⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
+ac# **⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
 
 Author: Ivonne Mendoza, Data Devotee.
 
@@ -11,7 +11,7 @@ https://cosmolabs.grafana.net/dashboard/snapshot/pgkUxOtA2bfSPZVNmP2WSXFMCj0Os3x
 
 There are two main sections: real-time data and historical data with insights and a rankings table.  
 
-![dashboard](./images/grafana_dashboard.png)
+![Grafana Dashboard](./images/grafana_dashboard.png)
 
 # **Table of Contents**
 
@@ -20,6 +20,7 @@ There are two main sections: real-time data and historical data with insights an
 3. [Architecture](#Architecture)
 4. [Technical requirements](#Technical-requirements-tools)
 5. [Scripts](#Scripts)  
+6. [Steps](#Steps)
 6. [Final thoughts and next steps](#Final-thoughts-and-next-steps)
 
 # **Project Overview**
@@ -58,6 +59,40 @@ monitor\_data.py: Check if data is going through from Stream Analytics to SQL Da
 simple\_parquet\_batch: Extract data from SQL Database, analyze it, and send historical data as a parquet file (Azure Blob Storage)  
 parquet\_to\_sql: Captures parquet files from Blob Storage and sends them to SQL Database
 
+# **Steps**
+
+The first thing you need is an Azure Account. This project is budget-friendly, so you can use free credits as you wish. For Grafana, it is a similar case scenario; they offer a generous free trial period, and I used that for this project. In case you do not want to use Grafana, you can stick to the Power BI visualization tool.
+
+## Create Azure Lambda Architecture resources.
+
+You can do this manually or using an automation tool like *Terraform.* For this time, the goal is to create resources directly in the Azure Portal.   
+
+The first step (if you want to start from scratch with Azure) is to create a ***Resource group*** to contain the necessary tools to run the Lambda architecture.
+
+To capture data from the *race\_simulator.py,* create an Event Hub Namespace in Azure and then an Event Hub instance to capture events.  
+
+Once you have created the event hub environment, it is time to make the stream analytics job resource. This step is crucial for processing data and creating input and output for further analysis. In the job topology section, you can add input and output for this project.
+
+Before running the *race\_simulator.py,* it is mandatory to obtain the Azure Keys to connect with the Event Hub and then send data to Azure.
+
+Go to the event hub namespace resource → Settings → Shared Access Policies. Choose your project and go to the section Primary connection string, copy the keys, and add them to race\_simulator.py 
+
+![Settings](./images/share.png)
+
+```
+NAMESPACE\_CONNECTION\_STR \= os.getenv('AZURE\_EVENTHUB\_CONNECTION\_STRING')  
+EVENTHUB\_NAME \= os.getenv('AZURE\_EVENTHUB\_NAME', 'project1')  
+```    
+
+Now, the script is ready to use. In this case, for security reasons, it is not a good idea to hardcode these security keys. Please use an env file and .gitignore to anonymize this. 
+
+```
+python3 race_simulator.py  
+```
+
+If everything is running ok, the race simulator starts to send data similar to this:
+
+![Script run](./images/run.png)
 
 
    
