@@ -1,4 +1,4 @@
-ac# **⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
+**⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
 
 Author: Ivonne Mendoza, Data Devotee.
 
@@ -77,7 +77,7 @@ Before running the *race\_simulator.py,* it is mandatory to obtain the Azure Key
 
 Go to the event hub namespace resource → Settings → Shared Access Policies. Choose your project and go to the section Primary connection string, copy the keys, and add them to race\_simulator.py 
 
-![Settings](./images/share.png)
+![settings](./images/share.png)
 
 ```
 NAMESPACE\_CONNECTION\_STR \= os.getenv('AZURE\_EVENTHUB\_CONNECTION\_STRING')  
@@ -92,7 +92,7 @@ python3 race_simulator.py
 
 If everything is running ok, the race simulator starts to send data similar to this:
 
-![Script run](./images/run.png)
+![script](./images/run.png)
 
 
    
