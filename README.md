@@ -1,4 +1,4 @@
-**⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
+# **⛵ Boat Racing: A Data Engineering project using Lambda Architecture**
 
 Author: Ivonne Mendoza, Data Devotee.
 
