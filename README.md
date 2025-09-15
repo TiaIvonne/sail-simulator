@@ -8,7 +8,10 @@ Welcome to my new personal project for learning more about Data Engineering tool
 
 You can see a snapshot from Grafana’s dashboard on this link.
 https://cosmolabs.grafana.net/dashboard/snapshot/pgkUxOtA2bfSPZVNmP2WSXFMCj0Os3xH  
-There are two main sections: real-time data and historical data with insights and a rankings table.
+
+There are two main sections: real-time data and historical data with insights and a rankings table.  
+
+![dashboard](./images/grafana_dashboard.png)
 
 # **Table of Contents**
 
