@@ -248,9 +248,12 @@ In this repo, you can find some queries as an example for Grafana panels.
 
 
 # **💭Final thoughts and next steps**  
-I remember the first time I touched this code. It was for a traineeship, and at that time, it was more about completing it on a tight schedule than learning and, even more, understanding what I was doing and why.  
-Things have changed since then, and now, just for fun, I recreate this project from my perspective. I modified the original simulator for fast-moving boats, changed the visualization tool, and created more scripts to run this project from my terminal, leaving the necessity to use a GUI interface for managing cloud services.  
+I remember the first time I touched this code.  
+It was for a traineeship, and at that time, it was more about completing it on a tight schedule than learning and, even more, understanding what I was doing and why.  
+Things have changed since then, and now, just for fun, I recreate this project from my perspective.  
+I modified the original simulator for fast-moving boats, changed the visualization tool, and created more scripts to run this project from my terminal, leaving the necessity to use a GUI interface for managing cloud services.  
 And then, I changed the visualization tool. Power BI is great, but there are some limitations to this tool, and I always want to explore other approaches.  
-That is why I chose Grafana for this. It is versatile, offers good support for connecting different data sources, and is open source. Perfect for case studies like this.  
+That is why I chose Grafana for this. It is versatile, offers good support for connecting different data sources, and is open source.  
+Perfect for case studies like this.  
 For next steps, I would like to explore Terraform for more abstractions in cloud infrastructure, and of course, try Kafka.
 
